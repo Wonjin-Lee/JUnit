@@ -1,0 +1,9 @@
+테스트 메서드 네이밍
+1. doingSomeOperationGeneratesSomeResult
+	- 어떤 동작을 하면 어떤 결과가 나온다.
+2. someResultOccursUnderSomeCondition.
+	- 어떤 결과는 어떤 조건에서 발생한다.
+	
+BDD - given-when-then
+1. whenDoingBehaviorThenSomeResultOccurs
+	- 어떤 일을 하면 어떤 결과가 나온다.
