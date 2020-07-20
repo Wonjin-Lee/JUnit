@@ -13,6 +13,7 @@ import java.util.Iterator;
 import java.util.List;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class AssertTest {
@@ -113,5 +114,13 @@ public class AssertTest {
 		} catch (InsufficientFundsException expected) {
 			assertThat(expected.getMessage(), equalTo("balance only 0"));
 		}
+	}
+	
+	// 다수의 실패를 다루는 한 가지 해결책은 문제가 있는 테스트에 집중하고 다른 실패 테스트는 주석 처리하는 것이다.
+	// JUnit에서는 @Ignore 애너테이션으로 주석 처리보다 더 나은 기능을 제공한다.
+	@Test
+	@Ignore("don't forget me!")
+	public void somethingWeCannotHandleRightNow() {
+		
 	}
 }
